@@ -1,6 +1,5 @@
-const Header = () =>
-    <header>
-        <h1>E-Commerce</h1>
+const NavBar = () =>
+        
             <nav>
                 <a href="#"> Notebooks </a><br></br>
                 <a href="#"> Placas de video</a><br></br>
@@ -8,6 +7,6 @@ const Header = () =>
                 <a href="#"> Motherboard </a><br></br>
                 <a href="#"> Coolers </a>
             </nav>
-    </header>
 
-export default Header
+
+export default NavBar;
