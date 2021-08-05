@@ -25,9 +25,9 @@ const ItemCount = ({ stock , inicial , alAgregar }) => {
     return (
         <>
             <p>Contador Actual : {contador}</p>
-            <button onClick={aumentarContador}>sumar</button>
-            <button onClick={restarContador}>restar</button>
-            <button onClick={confirmar}>confirmar</button>
+                <button onClick={aumentarContador}>sumar</button>
+                <button onClick={restarContador}>restar</button>
+                <button onClick={confirmar}>confirmar</button>
         </>
     );
 
