@@ -12,7 +12,7 @@ const App = () => {
         <>
             <CartWidget/>
             <Header test test2 nombre="Franco" edad={25} usuario={usuarios} />
-            <ItemListContainer greeting="Hola Mundo"/>
+            <ItemListContainer />
         </>
     );
 
