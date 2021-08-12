@@ -1,12 +1,20 @@
-const NavBar = () =>
-        
-            <nav>
-                <a href="#"> Notebooks </a><br></br>
-                <a href="#"> Placas de video</a><br></br>
-                <a href="#"> CPU </a><br></br>
-                <a href="#"> Motherboard </a><br></br>
-                <a href="#"> Coolers </a>
-            </nav>
+import { NavLink } from "react-router-dom";
 
 
-export default NavBar;
+export default function NavBar() {
+    return (
+        <nav>
+            <ul>
+                <li>
+                    <NavLink exact to="/" activeClassName="active">Home</NavLink>
+                </li>
+                <li>
+                    <NavLink exact to="/" activeClassName="active">About</NavLink>
+                </li>
+                <li>
+                    <NavLink exact to="/" activeClassName="active">Contact</NavLink>
+                </li>
+            </ul>
+        </nav>
+    );
+}
