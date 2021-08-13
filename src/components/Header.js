@@ -1,6 +1,3 @@
-import NavBar from "./NavBar";
-
-
 const Header = ({nombre, edad, usuarios}) =>{
 
     console.log(nombre);
@@ -11,7 +8,6 @@ const Header = ({nombre, edad, usuarios}) =>{
         <header>
             <h1>E-Commerce</h1>
             <p>Bienvenido {nombre}!</p>
-            <NavBar />
         </header>
     )
 }
