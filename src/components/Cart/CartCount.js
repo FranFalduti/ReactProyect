@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-const ItemCount = ({ stock , inicial , alAgregar }) => {
+const CartCount = ({ stock , inicial , alAgregar }) => {
 
     const [contador,setContador] = useState(inicial);
 
@@ -33,4 +33,4 @@ const ItemCount = ({ stock , inicial , alAgregar }) => {
 
 }
 
-export default ItemCount;
+export default CartCount;

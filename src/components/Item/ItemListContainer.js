@@ -1,4 +1,4 @@
-import ItemCount from "./ItemCount";
+import CartCount from "../Cart/CartCount";
 import ItemList from "./ItemList";
 
 const ItemListContainer = ({greeting}) =>{
@@ -10,7 +10,7 @@ const ItemListContainer = ({greeting}) =>{
     return (
         <div>
             <p className="saludo">{greeting}</p>
-            <ItemCount stock={5} inicial={1} alAgregar={alAgregar}/>
+            <CartCount stock={5} inicial={1} alAgregar={alAgregar}/>
             <ItemList />
         </div>
     );

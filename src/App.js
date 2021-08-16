@@ -1,8 +1,9 @@
-import Header from "./components/Header";
-import CartWidget from "./components/CartWidget";
-import ItemListContainer from "./components/ItemListContainer";
+import Header from "./components/Main/Header";
+import CartWidget from "./components/Cart/CartWidget";
+import ItemListContainer from "./components/Item/ItemListContainer";
 import "./estilos.css";
 import AppRouter from "./components/AppRouter";
+import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
             <CartWidget/>
             <Header test test2 nombre="Franco" edad={25} usuario={usuarios} />
             <ItemListContainer />
+            <ItemDetailContainer/>
         </>
     );
     
