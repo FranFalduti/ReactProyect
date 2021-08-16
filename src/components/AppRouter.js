@@ -1,21 +1,25 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import ItemListContainer from "./Item/ItemListContainer";
+import ItemDetailContainer from "./ItemDetail/ItemDetailContainer";
 import NavBar from "./Main/NavBar";
 import AboutPage from "./Router-App/AboutPage";
 import ContactPage from "./Router-App/ContactPage";
-import HomePage from "./Router-App/HomePage";
 import NotFoundPage from "./Router-App/NotFoundPage";
 
 
-export default function AppRouter() {
+export default function AppRouter(props) {
     return (
         <Router>
             <NavBar />
             <Switch>
                 <Route exact path="/about" component={AboutPage}/>
                 <Route exact path="/contact" component={ContactPage}/>
-                <Route exact path="/" component={HomePage}/>
+                <Route exact path="/" component={ItemListContainer}/>
+                <Route exact path="/category/:id" component={ItemListContainer}/>
+                <Route exact path="/item/:id" component={ItemDetailContainer}/>
                 <Route path="*" component={NotFoundPage}/>
             </Switch>
+            {props.children}
         </Router>
     );
 }

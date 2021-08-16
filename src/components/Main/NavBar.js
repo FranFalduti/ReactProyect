@@ -14,6 +14,9 @@ export default function NavBar() {
                 <li>
                     <NavLink exact to="/" activeClassName="active">Contact</NavLink>
                 </li>
+                <li>
+                    <NavLink exact to ="/category/:categoryId">Categorias</NavLink>
+                </li>
             </ul>
         </nav>
     );
