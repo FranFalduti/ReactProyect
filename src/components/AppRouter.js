@@ -10,6 +10,7 @@ import NotFoundPage from "./Router-App/NotFoundPage";
 export default function AppRouter(props) {
     return (
         <Router>
+            {props.children}
             <NavBar />
             <Switch>
                 <Route exact path="/about" component={AboutPage}/>
@@ -19,7 +20,6 @@ export default function AppRouter(props) {
                 <Route exact path="/item/:id" component={ItemDetailContainer}/>
                 <Route path="*" component={NotFoundPage}/>
             </Switch>
-            {props.children}
         </Router>
     );
 }

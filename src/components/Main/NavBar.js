@@ -9,10 +9,10 @@ export default function NavBar() {
                     <NavLink exact to="/" activeClassName="active">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/" activeClassName="active">About</NavLink>
+                    <NavLink exact to="/about" activeClassName="active">About</NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/" activeClassName="active">Contact</NavLink>
+                    <NavLink exact to="/contact" activeClassName="active">Contact</NavLink>
                 </li>
                 <li>
                     <NavLink exact to ="/category/:categoryId">Categorias</NavLink>
