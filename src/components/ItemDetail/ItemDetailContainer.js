@@ -17,7 +17,7 @@ const ItemDetailContainer = ({}) => {
 
     return (
         <div>
-            <ItemDetail pictureURL={item.pictureURL} description={item.description} price={item.price}/>
+            <ItemDetail pictureURL={item.pictureURL} description={item.description} price={item.price} stock={item.stock} amount={0}/>
         </div>
     )
 }

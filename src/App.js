@@ -1,6 +1,5 @@
 import Header from "./components/Main/Header";
 import CartWidget from "./components/Cart/CartWidget";
-import ItemListContainer from "./components/Item/ItemListContainer";
 import "./estilos.css";
 import AppRouter from "./components/AppRouter";
 

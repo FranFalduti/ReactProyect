@@ -9,6 +9,7 @@ const Item = ({pictureURL, id, title, description, price}) => {
                 <div>Título: {title}</div>
                 <div>Descripción: {description}</div>
                 <div>Precio: {price}</div>
+                
             </div>
         </NavLink>
     );

@@ -3,6 +3,7 @@ import ItemListContainer from "./Item/ItemListContainer";
 import ItemDetailContainer from "./ItemDetail/ItemDetailContainer";
 import NavBar from "./Main/NavBar";
 import AboutPage from "./Router-App/AboutPage";
+import CartPage from "./Router-App/CartPage";
 import ContactPage from "./Router-App/ContactPage";
 import NotFoundPage from "./Router-App/NotFoundPage";
 
@@ -18,6 +19,7 @@ export default function AppRouter(props) {
                 <Route exact path="/" component={ItemListContainer}/>
                 <Route exact path="/category/:id" component={ItemListContainer}/>
                 <Route exact path="/item/:id" component={ItemDetailContainer}/>
+                <Route exact path="/cart" component={CartPage}/>
                 <Route path="*" component={NotFoundPage}/>
             </Switch>
         </Router>
